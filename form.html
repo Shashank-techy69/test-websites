@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHASHANK TRAVELS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(120deg, #f8fafc 0%, #e2e8f0 100%);
+            margin: 0;
+            color: #222;
+        }
+
+        header {
+            background: #2d3748;
+            color: #fff;
+            padding: 24px 0 12px 0;
+            text-align: center;
+            letter-spacing: 2px;
+            font-size: 1.5rem;
+        }
+
+        header div:last-child {
+            font-size: 1rem;
+            font-weight: 300;
+            letter-spacing: 1px;
+            margin-top: 4px;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 70vh;
+        }
+
+        form {
+            background: #fff;
+            padding: 32px 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12);
+            min-width: 320px;
+            max-width: 400px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        form div {
+            margin-bottom: 18px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: 500;
+            color: #2d3748;
+            letter-spacing: 0.5px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            background: #f8fafc;
+            box-shadow: 0 1px 2px rgba(44, 62, 80, 0.04);
+        }
+
+        input[type="text"]:focus,
+        input[type="date"]:focus,
+        select:focus {
+            border-color: #4299e1;
+            outline: none;
+            box-shadow: 0 0 0 2px #4299e133;
+        }
+
+        input[type="radio"] {
+            margin-right: 6px;
+            accent-color: #4299e1;
+        }
+
+        .radio-group {
+            margin-bottom: 18px;
+        }
+
+        .radio-group label {
+            display: inline-block;
+            margin-right: 18px;
+            font-weight: 400;
+            color: #4a5568;
+            cursor: pointer;
+        }
+
+        form input[type="submit"],
+        form button {
+            background: linear-gradient(90deg, #4299e1 0%, #2b6cb0 100%);
+            color: #fff;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+        }
+
+        form input[type="submit"]:hover,
+        form button:hover {
+            background: linear-gradient(90deg, #2b6cb0 0%, #4299e1 100%);
+            box-shadow: 0 4px 16px rgba(44, 62, 80, 0.12);
+        }
+
+        select {
+            appearance: none;
+            background: #f8fafc url('data:image/svg+xml;utf8,<svg fill="gray" height="18" viewBox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M7.293 7.293a1 1 0 011.414 0L10 8.586l1.293-1.293a1 1 0 111.414 1.414l-2 2a1 1 0 01-1.414 0l-2-2a1 1 0 010-1.414z"/></svg>') no-repeat right 12px center/18px 18px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 18px 0;
+            color: #718096;
+            font-size: 0.95rem;
+            background: #f8fafc;
+            border-top: 1px solid #e2e8f0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            SHASHANK TRAVELS
+        </div>
+        <div>
+            <b><u>SAALO KA BHAROSA</u></b>
+        </div>
+    </header>
+    <main>
+        <form action="form.php">
+            <div>
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="name">
+            </div>
+            <div>
+                <label for="DOB">D.O.B</label>
+                <input id="DOB" type="date" placeholder="DOB">
+            </div>
+            <div>
+                <label for="destination">Destination</label>
+                <input id="destination" type="text" placeholder=" enter destination">
+            </div>
+            <div class="radio-group">
+                <input id="basic" type="radio" name="sub" value="basic">
+                <label for="basic">Basic</label>
+                <input id="premium" type="radio" name="sub" value="premium">
+                <label for="premium">Premium</label>
+                <input id="VIP" type="radio" name="sub" value="VIP">
+                <label for="VIP">VIP</label>
+            </div>
+            <div>
+                <label for="price range">Price range</label>
+                <select id="price range" type="option">
+                    <option value="" disabled selected>Select one of the above</option>
+                    <option value="$500">$500</option>
+                    <option value="$1000">$1000</option>
+                    <option value="$10 k">$10 k</option>
+
+                </select>
+            </div>
+        </form>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
